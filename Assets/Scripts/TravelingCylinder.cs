@@ -23,6 +23,7 @@ public class TravelingCylinder : MonoBehaviour
     void Start()
     {
         nextPos = midPos;
+        oppNextPos = -midPos;
         Debug.Log("Starting TravelingCylinder");
         child = transform.GetChild(0);
         Debug.Log("Starting StrangleCapsule");
