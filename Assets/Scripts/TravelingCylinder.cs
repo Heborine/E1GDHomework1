@@ -35,7 +35,7 @@ public class TravelingCylinder : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
         // The child has a strange flip of movement compared to the original by -1
         child.position = Vector3.MoveTowards(child.position, oppNextPos, speed * Time.deltaTime);
-
+        //capsule will only move towards next position when cylinder has arrived at its position
         if(transform.position == nextPos){
             if (nextPos == startPos || nextPos == endPos)
             {
